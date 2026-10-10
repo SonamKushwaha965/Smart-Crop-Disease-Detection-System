@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Crop Disease Detection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<base target="_blank">
 </head>
 <body>
-    
+
+<nav>
+    <div class="logo"><span>🌿</span> Smart Crop Detection</div>
+    <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">Kaise kaam karta hai</a></li>
+        <li><a href="#detect" class="nav-btn">Detect karo</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <svg class="leaf" style="left:6%;top:18%;width:80px" viewBox="0 0 24 24" fill="#fff"><path d="M20 3C11 3 5 8 5 15c0 3.9 3 6.5 6.5 6.5C19 21.5 21 12 20 3z"/></svg>
+    <svg class="leaf" style="right:8%;top:55%;width:60px;animation-delay:2s" viewBox="0 0 24 24" fill="#fff"><path d="M20 3C11 3 5 8 5 15c0 3.9 3 6.5 6.5 6.5C19 21.5 21 12 20 3z"/></svg>
+    <svg class="leaf" style="left:16%;bottom:10%;width:50px;animation-delay:4s" viewBox="0 0 24 24" fill="#fff"><path d="M20 3C11 3 5 8 5 15c0 3.9 3 6.5 6.5 6.5C19 21.5 21 12 20 3z"/></svg>
+    <h1>Fasal ki bimari ab <em>photo se pehchano</em></h1>
+    <p>AI-powered system — patti ki photo upload karo, seconds me bimari ka naam aur ilaj paao. Kisan bhaiyon ke liye bana hai, bilkul aasaan.</p>
+    <a href="#detect" class="cta">📷 Abhi check karo</a>
+    <div class="stats">
+        <div class="stat"><b>38+</b><small>bimariyan detect</small></div>
+        <div class="stat"><b>14</b><small>fasal (crops)</small></div>
+        <div class="stat"><b>98%</b><small>accuracy</small></div>
+        <div class="stat"><b>Free</b><small>kisanon ke liye</small></div>
+    </div>
+</header>
+
+<section id="features">
+    <div class="container">
+        <div class="sec-title reveal"><h2>Kyun khaas hai ye system?</h2><p>AI aur aasaan interface ka perfect combo</p></div>
+        <div class="features">
+            <div class="f-card reveal"><div class="ic">🧠</div><h3>AI se pehchan</h3><p>Deep learning (CNN) model photo dekhkar bimari pehchanta hai, jaise koi expert.</p></div>
+            <div class="f-card reveal"><div class="ic">⚡</div><h3>Turant result</h3><p>Upload karte hi kuch seconds me bimari ka naam aur confidence milta hai.</p></div>
+            <div class="f-card reveal"><div class="ic">💊</div><h3>Ilaj ka salah</h3><p>Har bimari ke saath uska treatment bhi Hindi me bataya jata hai.</p></div>
+            <div class="f-card reveal"><div class="ic">📴</div><h3>Offline demo</h3><p>PC par bina internet ke bhi chalta hai — server local hota hai.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="how" class="how">
+    <div class="container">
+        <div class="sec-title reveal"><h2>Kaise kaam karta hai?</h2><p>Sirf 3 aasaan steps</p></div>
+        <div class="steps">
+            <div class="step reveal"><div class="num">1</div><div class="ic">📸</div><h3>Photo upload karo</h3><p>Beemar patti ki saaf photo kheencho aur yahan upload karo.</p></div>
+            <div class="step reveal"><div class="num">2</div><div class="ic">🤖</div><h3>AI analyze karta hai</h3><p>CNN model photo ke patterns check karke bimari pehchanta hai.</p></div>
+            <div class="step reveal"><div class="num">3</div><div class="ic">✅</div><h3>Result + ilaj</h3><p>Bimari ka naam, kitna pakka hai (confidence) aur kya ilaj karein.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="detect">
+    <div class="container">
+        <div class="sec-title reveal"><h2>Bimari check karo</h2><p>Patti ki photo daalo, baaki AI sambhal lega</p></div>
+        <div class="card reveal">
+            <h2>Upload leaf image</h2>
+
+            {% if error %}
+            <div class="error-msg" style="display:block">❌ {{ error }}</div>
+            {% endif %}
+
+            <form method="POST" enctype="multipart/form-data" id="uploadForm">
+                <div class="drop-zone" id="dropZone">
+                    <div class="ic">📷</div>
+                    <div class="m">Patti ki photo yahan drop karo</div>
+                    <div class="u">ya click karke select karo (JPG / PNG)</div>
+                    <input type="file" id="fileInput" name="file" accept="image/*">
+                </div>
+                <div class="preview-wrap" id="previewWrap" {% if img_path %}style="display:block"{% endif %}>
+                    {% if img_path %}
+                    <img src="{{ url_for('static', filename=img_path) }}" alt="Uploaded leaf">
+                    {% else %}
+                    <img id="previewImg" src="" alt="Leaf preview">
+                    {% endif %}
+                </div>
+                <button type="submit" class="btn" id="submitBtn" disabled>🔍 Upload &amp; Analyze</button>
+            </form>
+
+            {% if result %}
+            <div class="result {{ 'healthy' if result.icon == 'healthy' else 'disease' }}" id="resultBox">
+                <span class="badge">{{ '✅ HEALTHY' if result.icon == 'healthy' else '⚠️ DISEASE' }}</span>
+                <h3>{{ result.disease }}</h3>
+                <div class="status-line">Status: {{ result.status }}</div>
+                <div class="conf-label">Confidence (Bharosa):</div>
+                <div class="conf-bar"><div class="conf-fill" data-w="{{ result.confidence }}"></div></div>
+                <div class="conf-value">{{ result.confidence }}%</div>
+                <div class="advice">💊 <b>Ilaj:</b> {{ result.advice }}</div>
+            </div>
+            <a href="/" class="btn btn-reset">🔄 Nayi Photo Check Karo</a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<footer>
+    <b>Smart Crop Disease Detection System</b><br>
+    Minor Project (2418507) · Group 05 · Government Polytechnic Katihar<br>
+    <span style="font-size:12px">Domain: Agriculture / Smart Agriculture</span>
+</footer>
+
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+    <p>AI model analyze kar raha hai...</p>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

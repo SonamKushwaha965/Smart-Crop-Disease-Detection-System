@@ -1,0 +1,44 @@
+SMART CROP DISEASE DETECTION - COMPLETE SETUP (Group 05)
+=========================================================
+
+FOLDER STRUCTURE (aise hi banao):
+    Smart_Crop_Disease_Detection/
+        app.py
+        train_model.py
+        requirements.txt
+        crop_model.h5          <- Step 2 ke baad
+        class_names.json       <- Step 2 ke baad
+        templates/
+            index.html
+        static/
+            css/
+                style.css
+            js/
+                script.js
+            uploads/           <- (empty, app banayega)
+
+STEP 1: Files rakho
+- templates/index.html, static/css/style.css, static/js/script.js
+- root me: app.py, train_model.py, requirements.txt
+
+STEP 2: Model train karo (SIRF EK BAAR)
+- Google Colab (colab.research.google.com) kholao - free GPU
+- Kaggle se "plantvillage dataset" download karo
+- train_model.py chalao -> crop_model.h5 + class_names.json download karo
+- Ye dono files project folder (root) me rakho
+
+STEP 3: Libraries install karo (VS Code terminal):
+    pip install -r requirements.txt
+
+STEP 4: Run karo:
+    python app.py
+- Browser: http://localhost:5000
+
+STEP 5: Test karo
+- Healthy patti ki photo -> green "Healthy" result
+- Beemar patti ki photo -> orange "Disease" result + ilaj
+
+TROUBLESHOOTING:
+- "Model load nahi hua" -> crop_model.h5 folder me nahi hai
+- Server crash -> pip install dobara karo, file names check karo
+- Page khali -> template/static folder ke naam exact same hone chahiye
