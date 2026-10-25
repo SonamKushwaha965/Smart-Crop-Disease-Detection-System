@@ -1,0 +1,21 @@
+import json
+
+class_names = ["Apple___Apple_scab","Apple___Black_rot","Apple___Cedar_apple_rust","Apple___healthy","Bitter_Gourd___Downey_mildew","Bitter_Gourd___Fusarium_wilt","Bitter_Gourd___Mosaic_virus","Bitter_Gourd___healthy","Blueberry___healthy","Bottle_gourd___Anthracnose","Bottle_gourd___Downey_mildew","Bottle_gourd___healthy","Cauliflower___Black_Rot","Cauliflower___Downy_mildew","Cauliflower___healthy","Cherry_(including_sour)___Powdery_mildew","Cherry_(including_sour)___healthy","Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot","Corn_(maize)___Common_rust_","Corn_(maize)___Northern_Leaf_Blight","Corn_(maize)___healthy","Cucumber___Anthracnose_lesions","Cucumber___Downy_mildew","Cucumber___healthy","Eggplant___Eggplant_Cercopora_leaf_spot","Eggplant___Eggplant_begomovirus","Eggplant___Eggplant_verticillium_wilt","Eggplant___healthy","Grape___Black_rot","Grape___Esca_(Black_Measles)","Grape___Leaf_blight_(Isariopsis_Leaf_Spot)","Grape___healthy","Groundnut___Alternaria_Leaf_Spot","Groundnut___Leaf_Spot","Groundnut___Rosette","Groundnut___Rust","Groundnut___healthy","Lentil___Ascochyta_Blight","Lentil___Powdery_Mildew","Lentil___Rust","Lentil___healthy","Orange___Haunglongbing_(Citrus_greening)","Peach___Bacterial_spot","Peach___healthy","Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy","Potato___Early_blight","Potato___Late_blight","Potato___healthy","Raspberry___healthy","Rice___Brown_spot","Rice___Hispa","Rice___Leaf_Blast","Rice___healthy","Soybean___healthy","Squash___Powdery_mildew","Strawberry___Leaf_scorch","Strawberry___healthy","Tomato___Bacterial_spot","Tomato___Early_blight","Tomato___Late_blight","Tomato___Leaf_Mold","Tomato___Septoria_leaf_spot","Tomato___Spider_mites Two-spotted_spider_mite","Tomato___Target_Spot","Tomato___Tomato_Bacterial_spot","Tomato___Tomato_Yellow_Leaf_Curl_Virus","Tomato___Tomato_leaf_curl_virus","Tomato___Tomato_mosaic_virus","Tomato___Tomato_spotted_wilt","Tomato___healthy","Wheat___Aphid","Wheat___Black_Rust","Wheat___Blast","Wheat___Brown_Rust","Wheat___Common_Root_Rot","Wheat___Fusarium_Head_Blight","Wheat___Leaf_Blight","Wheat___Mildew","Wheat___Mite","Wheat___Septoria","Wheat___Smut","Wheat___Stem_Fly","Wheat___Tan_Spot","Wheat___Yellow_Rust","Wheat___healthy"]
+
+db = {}
+for c in class_names:
+    cl = c.lower()
+    if "healthy" in cl:
+        db[c] = {"disease_name": f"Swasth - {c.split('___')[0]}", "solution": "Paudha swasth hai. Paani aur khaad dete rahe."}
+    elif "rust" in cl or "blight" in cl or "spot" in cl or "rot" in cl or "mildew" in cl:
+        db[c] = {"disease_name": "Fafund / Dhabba Rog", "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."}
+    elif "virus" in cl or "mosaic" in cl:
+        db[c] = {"disease_name": "Virus Rog", "solution": "Sankramit paudha ukhaad ke jala de. Safed makkhi control kare."}
+    else:
+        db[c] = {"disease_name": c.replace("___"," - ").replace("_"," "), "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."}
+
+db["Unknown"] = {"disease_name": "Anjaan Bimari / Gobhi Jaali Keet", "solution": "Ye 87 list me nahi hai. Jaise Gobhi me jaali keeda - Bt spray 1g/L ya Neem tel 5ml + Soap 2ml/L shaam ko spray kare."}
+
+with open("disease_info.json","w",encoding="utf-8") as f:
+    json.dump(db, f, ensure_ascii=False, indent=2)
+print("disease_info.json ban gaya - 87 entries")

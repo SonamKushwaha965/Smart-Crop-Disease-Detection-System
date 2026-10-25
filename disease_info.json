@@ -1,0 +1,350 @@
+{
+  "Apple___Apple_scab": {
+    "disease_name": "Apple - Apple scab",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Apple___Black_rot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Apple___Cedar_apple_rust": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Apple___healthy": {
+    "disease_name": "Swasth - Apple",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Bitter_Gourd___Downey_mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Bitter_Gourd___Fusarium_wilt": {
+    "disease_name": "Bitter Gourd - Fusarium wilt",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Bitter_Gourd___Mosaic_virus": {
+    "disease_name": "Virus Rog",
+    "solution": "Sankramit paudha ukhaad ke jala de. Safed makkhi control kare."
+  },
+  "Bitter_Gourd___healthy": {
+    "disease_name": "Swasth - Bitter_Gourd",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Blueberry___healthy": {
+    "disease_name": "Swasth - Blueberry",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Bottle_gourd___Anthracnose": {
+    "disease_name": "Bottle gourd - Anthracnose",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Bottle_gourd___Downey_mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Bottle_gourd___healthy": {
+    "disease_name": "Swasth - Bottle_gourd",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Cauliflower___Black_Rot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Cauliflower___Downy_mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Cauliflower___healthy": {
+    "disease_name": "Swasth - Cauliflower",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Cherry_(including_sour)___healthy": {
+    "disease_name": "Swasth - Cherry_(including_sour)",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Corn_(maize)___Common_rust_": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Corn_(maize)___healthy": {
+    "disease_name": "Swasth - Corn_(maize)",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Cucumber___Anthracnose_lesions": {
+    "disease_name": "Cucumber - Anthracnose lesions",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Cucumber___Downy_mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Cucumber___healthy": {
+    "disease_name": "Swasth - Cucumber",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Eggplant___Eggplant_Cercopora_leaf_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Eggplant___Eggplant_begomovirus": {
+    "disease_name": "Virus Rog",
+    "solution": "Sankramit paudha ukhaad ke jala de. Safed makkhi control kare."
+  },
+  "Eggplant___Eggplant_verticillium_wilt": {
+    "disease_name": "Eggplant - Eggplant verticillium wilt",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Eggplant___healthy": {
+    "disease_name": "Swasth - Eggplant",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Grape___Black_rot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "disease_name": "Grape - Esca (Black Measles)",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Grape___healthy": {
+    "disease_name": "Swasth - Grape",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Groundnut___Alternaria_Leaf_Spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Groundnut___Leaf_Spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Groundnut___Rosette": {
+    "disease_name": "Groundnut - Rosette",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Groundnut___Rust": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Groundnut___healthy": {
+    "disease_name": "Swasth - Groundnut",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Lentil___Ascochyta_Blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Lentil___Powdery_Mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Lentil___Rust": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Lentil___healthy": {
+    "disease_name": "Swasth - Lentil",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "disease_name": "Orange - Haunglongbing (Citrus greening)",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Peach___Bacterial_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Peach___healthy": {
+    "disease_name": "Swasth - Peach",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Pepper,_bell___healthy": {
+    "disease_name": "Swasth - Pepper,_bell",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Potato___Early_blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Potato___Late_blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Potato___healthy": {
+    "disease_name": "Swasth - Potato",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Raspberry___healthy": {
+    "disease_name": "Swasth - Raspberry",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Rice___Brown_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Rice___Hispa": {
+    "disease_name": "Rice - Hispa",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Rice___Leaf_Blast": {
+    "disease_name": "Rice - Leaf Blast",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Rice___healthy": {
+    "disease_name": "Swasth - Rice",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Soybean___healthy": {
+    "disease_name": "Swasth - Soybean",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Squash___Powdery_mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Strawberry___Leaf_scorch": {
+    "disease_name": "Strawberry - Leaf scorch",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Strawberry___healthy": {
+    "disease_name": "Swasth - Strawberry",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Tomato___Bacterial_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___Early_blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___Late_blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___Leaf_Mold": {
+    "disease_name": "Tomato - Leaf Mold",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___Target_Spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___Tomato_Bacterial_spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "disease_name": "Virus Rog",
+    "solution": "Sankramit paudha ukhaad ke jala de. Safed makkhi control kare."
+  },
+  "Tomato___Tomato_leaf_curl_virus": {
+    "disease_name": "Virus Rog",
+    "solution": "Sankramit paudha ukhaad ke jala de. Safed makkhi control kare."
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "disease_name": "Virus Rog",
+    "solution": "Sankramit paudha ukhaad ke jala de. Safed makkhi control kare."
+  },
+  "Tomato___Tomato_spotted_wilt": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Tomato___healthy": {
+    "disease_name": "Swasth - Tomato",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Wheat___Aphid": {
+    "disease_name": "Wheat - Aphid",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Wheat___Black_Rust": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___Blast": {
+    "disease_name": "Wheat - Blast",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Wheat___Brown_Rust": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___Common_Root_Rot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___Fusarium_Head_Blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___Leaf_Blight": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___Mildew": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___Mite": {
+    "disease_name": "Wheat - Mite",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Wheat___Septoria": {
+    "disease_name": "Wheat - Septoria",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Wheat___Smut": {
+    "disease_name": "Wheat - Smut",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Wheat___Stem_Fly": {
+    "disease_name": "Wheat - Stem Fly",
+    "solution": "Neem tel 5ml/L + Mancozeb 2g/L spray kare."
+  },
+  "Wheat___Tan_Spot": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___Yellow_Rust": {
+    "disease_name": "Fafund / Dhabba Rog",
+    "solution": "Mancozeb 2g/L ya Propiconazole 1ml/L spray kare. Kharaab patte hata de."
+  },
+  "Wheat___healthy": {
+    "disease_name": "Swasth - Wheat",
+    "solution": "Paudha swasth hai. Paani aur khaad dete rahe."
+  },
+  "Unknown": {
+    "disease_name": "Anjaan Bimari / Gobhi Jaali Keet",
+    "solution": "Ye 87 list me nahi hai. Jaise Gobhi me jaali keeda - Bt spray 1g/L ya Neem tel 5ml + Soap 2ml/L shaam ko spray kare."
+  }
+}
