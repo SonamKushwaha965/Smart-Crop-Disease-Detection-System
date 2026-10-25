@@ -1,9 +1,17 @@
 from flask import Flask, render_template, request
-import random, os
+import random
+import os
 
 app = Flask(__name__)
 
-diseases = ["Tomato - Late Blight", "Tomato - Healthy", "Potato - Early Blight"]
+# Demo ke liye kuch diseases
+DISEASES = [
+    "Tomato - Healthy",
+    "Tomato - Late Blight", 
+    "Tomato - Early Blight",
+    "Potato - Healthy",
+    "Potato - Late Blight"
+]
 
 @app.route('/')
 def home():
@@ -11,9 +19,14 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    # Demo prediction - model ki zarurat nahi
-    result = random.choice(diseases)
+    # File upload check
+    if 'image' not in request.files:
+        return render_template('index.html', prediction="Please upload an image")
+    
+    # Demo prediction - random result (kyunki asli model Render pe nahi chalta)
+    result = random.choice(DISEASES)
     return render_template('index.html', prediction=result)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
