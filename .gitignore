@@ -14,3 +14,7 @@ static/uploads/
 # Local environment
 .venv/
 venv/
+*.h5
+*.tflite
+__pycache__/
+uploads/
