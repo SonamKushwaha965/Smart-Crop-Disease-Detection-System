@@ -1,50 +1,38 @@
-import os
-import json
-import random
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 from PIL import Image
+import random
 
 app = Flask(__name__)
 
-# JSON load karo - ye to hai tumhare pass
-with open("class_names.json", "r") as f:
-    class_names = json.load(f)
+# Demo ke liye kuch bimariyan aur upay
+DISEASES = [
+    {"name": "Healthy Plant - Bilkul Swasth Hai", "treatment": "Paudha swasth hai, regular paani dete raho."},
+    {"name": "Early Blight - Jhulas Rog", "treatment": "Neem ka tel ka chhidkaw karo, kharab patte hata do."},
+    {"name": "Late Blight - Pachheti Jhulsa", "treatment": "Fungicide ka upyog karo, khet me paani jama na hone do."},
+    {"name": "Leaf Spot - Patti par daag", "treatment": "Sankramit patte tod kar jala do, saaf safai rakho."},
+    {"name": "Bacterial Spot", "treatment": "Copper based dawai ka chhidkaw karo."}
+]
 
-with open("disease_info.json", "r") as f:
-    disease_info = json.load(f)
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    result = None
+    if request.method == 'POST':
+        file = request.files.get('file')
+        if file:
+            # Image open karke check kar lete hai (model nahi hai to random result)
+            try:
+                img = Image.open(file.stream)
+            except:
+                pass
+            
+            result = random.choice(DISEASES)
+            result['confidence'] = random.randint(85, 98)
 
-print("✅ App Loaded (Demo Mode) - Phone pe chalega")
+    return render_template('index.html', result=result)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-@app.route('/predict', methods=['POST'])
-def predict():
-    # File aayi ya nahi check
-    if 'file' not in request.files:
-        return jsonify({"error": "File nahi mili"}), 400
-    
-    file = request.files['file']
-    # Image open karke dekh lete hai ki kharab to nahi
-    try:
-        img = Image.open(file).convert('RGB')
-    except:
-        return jsonify({"error": "Image kharab hai"}), 400
-
-    # --- YAHAN DUMMY PREDICTION HAI (Phone demo ke liye) ---
-    # Kal jab college PC pe tensorflow lagega, ye asli model se replace ho jayega
-    disease_name = random.choice(class_names)
-    confidence = round(random.uniform(85, 98), 1)
-    info = disease_info.get(disease_name, {})
-
-    return jsonify({
-        "disease": disease_name,
-        "confidence": confidence,
-        "info": info,
-        "note": "Demo Mode - College PC pe original model chalega"
-    })
+@app.route('/health')
+def health():
+    return "OK"
 
 if __name__ == '__main__':
-    print("Starting server for PC + Phone...")
     app.run(host='0.0.0.0', port=5000, debug=True)
